@@ -1,11 +1,11 @@
 # Cricket CLI 🏏
 
-![Score Test](https://github.com/mskian/cricketscore/workflows/Score%20Test/badge.svg)  
+![Score Test](https://github.com/mskian/cricket-cli/workflows/Score%20Test/badge.svg)  
 
 Get Live Cricket Score Update on Terminal and CMD.  
 
 <p>
-<img alt="Cricket Score" src="https://raw.githubusercontent.com/mskian/cricketscore/main/screeshot.gif">
+<img alt="Cricket Score" src="https://raw.githubusercontent.com/mskian/cricket-cli/main/screeshot.gif">
 </p>
 
 ## Requirements
@@ -17,11 +17,11 @@ Get Live Cricket Score Update on Terminal and CMD.
 - Install via GIT or Download the Repo
 
 ```sh
-git clone https://github.com/mskian/cricketscore.git
+git clone https://github.com/mskian/cricket-cli.git
 ```
 
 ```sh
-cd cricketscore
+cd cricket-cli
 npm install
 ```
 

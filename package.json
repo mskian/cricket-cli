@@ -12,21 +12,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mskian/cricketscore.git"
+    "url": "git+https://github.com/mskian/cricket-cli.git"
   },
   "keywords": [
     "cricket",
     "score",
     "live",
     "match",
-    "cricketscore"
+    "cricketscore",
+    "cricket-cli"
   ],
   "author": "Santhosh Veer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mskian/cricketscore/issues"
+    "url": "https://github.com/mskian/cricket-cli/issues"
   },
-  "homepage": "https://github.com/mskian/cricketscore#readme",
+  "homepage": "https://github.com/mskian/cricket-cli#readme",
   "dependencies": {
     "axios": "^0.21.1",
     "chalk": "^4.1.0",
