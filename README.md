@@ -1,6 +1,6 @@
 # Cricket CLI 🏏
 
-![Score Test](https://github.com/mskian/cricket-cli/workflows/Score%20Test/badge.svg)  
+![Score Test](https://github.com/mskian/cricket-cli/workflows/Score%20Test/badge.svg) [![dependencies Status](https://status.david-dm.org/gh/mskian/cricket-cli.svg?style=flat-square)](https://david-dm.org/mskian/cricket-cli)  
 
 Get Live Cricket Score Update on Terminal and CMD.  
 
