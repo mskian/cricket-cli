@@ -1,6 +1,6 @@
 {
   "name": "cricket-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get Live Cricket Score Update on Terminal and CMD.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "start": "node index.js -l"
   },
   "bin": {
-    "livescore": "./index.js"
+    "livescore": "index.js"
   },
   "repository": {
     "type": "git",
