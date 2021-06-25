@@ -31,7 +31,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "chalk": "^4.1.1",
-    "commander": "^7.2.0",
+    "commander": "^8.0.0",
     "log-update": "^4.0.0",
     "ora": "^5.4.1",
     "update-notifier": "^5.1.0"
