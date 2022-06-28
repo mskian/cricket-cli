@@ -33,7 +33,7 @@
     "chalk": "^4.1.2",
     "commander": "^9.3.0",
     "log-update": "^4.0.0",
-    "ora": "^5.4.1",
+    "ora": "^6.1.2",
     "update-notifier": "^5.1.0"
   }
 }
