@@ -1,6 +1,6 @@
 # Cricket CLI 🏏
 
-![Score Test](https://github.com/mskian/cricket-cli/workflows/Score%20Test/badge.svg) [![dependencies Status](https://status.david-dm.org/gh/mskian/cricket-cli.svg?style=flat-square)](https://david-dm.org/mskian/cricket-cli)  
+![Score Test](https://github.com/mskian/cricket-cli/workflows/Score%20Test/badge.svg)  
 
 Get Live Cricket Score Update on Terminal and CMD.  
 
@@ -10,7 +10,7 @@ Get Live Cricket Score Update on Terminal and CMD.
 
 ## Requirements
 
-- Node.js 12X LTS or 14X LTS 📦
+- Node.js 14X LTS, 16X LTS or 18x LTS 📦
 
 ## Installation
 
