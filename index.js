@@ -1,20 +1,20 @@
 #!/usr/bin/env node
 
-const axios = require('axios');
-const chalk = require('chalk');
-const dns = require('dns');
-const logUpdate = require('log-update');
-const program = require('commander');
-const ora = require('ora');
-const updateNotifier = require('update-notifier');
+import axios from 'axios';
+import chalk  from 'chalk';
+import dns  from 'dns';
+import logUpdate from 'log-update';
+import { program } from 'commander';
+import ora from 'ora';
+import updateNotifier from 'update-notifier';
+import { readFileSync } from "fs";
+const packageJSON = JSON.parse(readFileSync("./package.json"));
 
-const pkg = require('./package.json');
-updateNotifier({
-    pkg
-}).notify();
-const LIVE_MATCH = "https://cricket-api.vercel.app/live.php";
+updateNotifier({pkg: packageJSON}).notify();
 
-program.version(pkg.version)
+const LIVE_MATCH = "https://cricket-api.vercel.app/live";
+
+program.version(packageJSON.version)
     .option('-l, --live', 'Get Current Live Cricket Match Score')
     .option('-m, --match <Match URL>', 'Enter Cricbuzz Live Match URL and Fetch the Live Score data from Cricbuzz')
 program.parse(process.argv);
@@ -46,14 +46,14 @@ function GetScore() {
                 url: url
             })
             .then(function(response) {
-                if (response.data.livescore.current !== 'Data Not Found') {
+                if (response.data.current !== 'Data Not Found') {
                     spinner.stop();
-                    console.log(`\n${pre}`, response.data.livescore.title);
-                    console.log(`\n${pre}`, response.data.livescore.update);
-                    console.log(`\n${pre}`, 'Live Score:', response.data.livescore.current);
-                    console.log(`\n${pre}`, 'Run Rate:', response.data.livescore.runrate);
-                    console.log(`\n${pre}`, 'Current Batsman:', response.data.livescore.batsman, 'Runs', response.data.livescore.batsmanrun, response.data.livescore.ballsfaced, 'balls');
-                    console.log(`\n${pre}`, 'Current Bowler:', response.data.livescore.bowler, response.data.livescore.bowlerover, 'over', response.data.livescore.bowlerruns, 'run and', response.data.livescore.bowlerwickets, 'wicket');
+                    console.log(`\n${pre}`, response.data.title);
+                    console.log(`\n${pre}`, response.data.update);
+                    console.log(`\n${pre}`, 'Live Score:', response.data.current);
+                    console.log(`\n${pre}`, 'Run Rate:', response.data.runrate);
+                    console.log(`\n${pre}`, 'Current Batsman:', response.data.batsman, 'Runs', response.data.batsmanrun, response.data.ballsfaced, 'balls');
+                    console.log(`\n${pre}`, 'Current Bowler:', response.data.bowler, response.data.bowlerover, 'over', response.data.bowlerruns, 'run and', response.data.bowlerwickets, 'wicket');
                     console.log('\n');
                 } else {
                     spinner.stop();
@@ -83,17 +83,17 @@ function ScoreData(currentmatch) {
         var url = MATCH_URL;
         axios({
                 method: 'GET',
-                url: 'https://cricket-api.vercel.app/cri.php?url=' + url
+                url: 'https://cricket-api.vercel.app/score?url=' + url
             })
             .then(function(response) {
-                if (response.data.livescore.current !== 'Data Not Found') {
+                if (response.data.current !== 'Data Not Found') {
                     spinner.stop();
-                    console.log(`\n${pre}`, response.data.livescore.title);
-                    console.log(`\n${pre}`, response.data.livescore.update);
-                    console.log(`\n${pre}`, 'Live Score:', response.data.livescore.current);
-                    console.log(`\n${pre}`, 'Run Rate:', response.data.livescore.runrate);
-                    console.log(`\n${pre}`, 'Current Batsman:', response.data.livescore.batsman, 'Runs', response.data.livescore.batsmanrun, response.data.livescore.ballsfaced, 'balls');
-                    console.log(`\n${pre}`, 'Current Bowler:', response.data.livescore.bowler, response.data.livescore.bowlerover, 'over', response.data.livescore.bowlerruns, 'run and', response.data.livescore.bowlerwickets, 'wicket');
+                    console.log(`\n${pre}`, response.data.title);
+                    console.log(`\n${pre}`, response.data.update);
+                    console.log(`\n${pre}`, 'Live Score:', response.data.current);
+                    console.log(`\n${pre}`, 'Run Rate:', response.data.runrate);
+                    console.log(`\n${pre}`, 'Current Batsman:', response.data.batsman, 'Runs', response.data.batsmanrun, response.data.ballsfaced, 'balls');
+                    console.log(`\n${pre}`, 'Current Bowler:', response.data.bowler, response.data.bowlerover, 'over', response.data.bowlerruns, 'run and', response.data.bowlerwickets, 'wicket');
                     console.log('\n');
                 } else {
                     spinner.stop();
