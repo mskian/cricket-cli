@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import axios from 'axios';
 import chalk  from 'chalk';
 import dns  from 'dns';
@@ -8,7 +6,7 @@ import { program } from 'commander';
 import ora from 'ora';
 import updateNotifier from 'update-notifier';
 import { readFileSync } from "fs";
-const packageJSON = JSON.parse(readFileSync("./package.json"));
+const packageJSON = JSON.parse(readFileSync(new URL("./package.json", import.meta.url)));
 
 updateNotifier({pkg: packageJSON}).notify();
 

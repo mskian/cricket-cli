@@ -28,8 +28,14 @@ npm install
 - Create NPM Link for CLI
 
 ```sh
-npm link
+sudo npm link
 ```
+
+- unlink CLI
+
+`sh
+npm rm --global cricket-cli
+``
 
 (OR)
 
@@ -38,6 +44,15 @@ npm link
 ```sh
 npm install -g cricket-cli
 ```
+
+- install via `npx`
+
+```sh
+npx cricket-cli
+npx cricket-cli -l
+```
+
+- Test it
 
 ```sh
 $ livescore -h
