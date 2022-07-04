@@ -33,9 +33,9 @@ sudo npm link
 
 - unlink CLI
 
-`sh
+```sh
 npm rm --global cricket-cli
-``
+```
 
 (OR)
 
