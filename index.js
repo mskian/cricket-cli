@@ -14,7 +14,7 @@ const LIVE_MATCH = "https://cricket-api.vercel.app/live";
 
 program.version(packageJSON.version)
     .option('-l, --live', 'Get Current Live Cricket Match Score')
-    .option('-m, --match <Match URL>', 'Enter Cricbuzz Live Match URL and Fetch the Live Score data from Cricbuzz')
+    .option('-m, --match <Match ID>', 'Enter Cricbuzz Live Match ID and Fetch the Live Score data from Cricbuzz Live Score Data')
 program.parse(process.argv);
 
 const pre = chalk.cyan.bold('›');
@@ -81,7 +81,7 @@ function ScoreData(currentmatch) {
         var url = MATCH_URL;
         axios({
                 method: 'GET',
-                url: 'https://cricket-api.vercel.app/score?url=' + url
+                url: 'https://cricket-api.vercel.app/score?url=https://m.cricbuzz.com/live-cricket-scores/' + url
             })
             .then(function(response) {
                 if (response.data.current !== 'Data Not Found') {

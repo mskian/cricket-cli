@@ -62,11 +62,11 @@ Usage: livescore [options]
 Options:
   -V, --version            output the version number
   -l, --live               Get Current Live Cricket Match Score
-  -m, --match <Match URL>  Enter Cricbuzz Live Match URL and Fetch the Live Score data from Cricbuzz
+  -m, --match <Match ID>   Enter Cricbuzz Live Match ID and Fetch the Live Score data from Cricbuzz Live Score Data
   -h, --help               display help for command
  ```
 
-- Get Live Match Score
+- Get Current Live Match Score
 
 ```sh
 livescore -l
@@ -75,7 +75,7 @@ livescore -l
 - Get Other Live Match Details
 
 ```sh
-livescore -m <Live Match URL from Cricbuzz>
+livescore -m <Live Match ID from Cricbuzz>
 ```
 
 ## API Library 🗃
