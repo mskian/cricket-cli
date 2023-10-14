@@ -16,11 +16,13 @@
   },
   "keywords": [
     "cricket",
+    "cricket api",
     "score",
     "live",
     "match",
-    "cricketscore",
-    "cricket-cli"
+    "live score",
+    "cricket score",
+    "cricket cli"
   ],
   "type": "module",
   "author": "Santhosh Veer",

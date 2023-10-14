@@ -10,7 +10,7 @@ Get Live Cricket Score Update on Terminal and CMD.
 
 ## Requirements
 
-- Node.js 14X LTS, 16X LTS or 18x LTS 📦
+- Node.js 16X LTS or 18x LTS 📦
 
 ## Installation
 
@@ -80,25 +80,14 @@ livescore -m <Live Match ID from Cricbuzz>
 
 ## API Library 🗃
 
-- Free Cricket API - <https://github.com/mskian/cricket-api>
+- Free Cricket API - <https://github.com/sanwebinfo/cricket-api-nodejs>
 
 ## Disclaimer 🗃
 
 - This is not an Offical CLI tool from Cricbuzz - it's an Unofficial CLI tool and API
 - This is for Education Purpose only - use at your own risk on Production Site
 
-All Credits Goes to <https://www.cricbuzz.com/>
-
-## My other Projects 🤓
-
-| # | Project Name | Description |
-|---|:------|-------------|
-| 01 | [Live Cricket Score Static Site](https://github.com/mskian/livescore) | A Simple Scrape Method - Fetch the Live Cricket Score from `espncricinfo.com` using Nodejs and Cheerio.js |
-| 02 | [IPL Special](https://github.com/mskian/iplscore) | Cricket API for Get the Live IPL Cricket Score |
-| 03 | [Live IPL Score Update on Telegram](https://github.com/mskian/score-update) | Get Live IPL cricket Score on Telegram  |
-| 04 | [Live Cricket Score Wordpress Plugin (JS Version)](https://github.com/mskian/hello-cricket) | Get Live Cricket Score on Wordpress site call API using Javascript Fetch API |
-| 05 | [Live Cricket Score Wordpress Plugin (Wp Remote URL)](https://github.com/mskian/san-cricket) | Get Live Cricket Score on Wordpress site call API using Wordpress HTTP Remote URL |  
-| 06 | [PWA Web App](https://github.com/mskian/vue-cricket) | Real-time Live Cricket Score Web app + PWA Built using Nuxt.js |  
+All Credits Goes to <https://www.cricbuzz.com/>  
 
 ## LICENSE 📕
 
