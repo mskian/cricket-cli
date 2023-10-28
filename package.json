@@ -37,6 +37,6 @@
     "commander": "^11.1.0",
     "log-update": "^5.0.1",
     "ora": "^7.0.1",
-    "update-notifier": "^6.0.2"
+    "update-notifier": "^7.0.0"
   }
 }
