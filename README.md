@@ -10,7 +10,7 @@ Get Live Cricket Score Update on Terminal and CMD.
 
 ## Requirements
 
-- Node.js 16X LTS or 18x LTS 📦
+- Node.js 18X LTS or 20x LTS 📦
 
 ## Installation
 

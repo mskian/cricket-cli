@@ -55,7 +55,8 @@ function GetScore() {
                     console.log('\n');
                 } else {
                     spinner.stop();
-                    console.log(`\n${pos}`, 'Sorry Currently No Live Match');
+                    console.log(`\n${pre}`, response.data.title);
+                    console.log(`\n${pre}`, response.data.update);
                     console.log('\n');
                 }
             })
@@ -95,7 +96,8 @@ function ScoreData(currentmatch) {
                     console.log('\n');
                 } else {
                     spinner.stop();
-                    console.log(`\n${pos}`, 'Sorry Currently No Live Match');
+                    console.log(`\n${pre}`, response.data.title);
+                    console.log(`\n${pre}`, response.data.update);
                     console.log('\n');
                 }
             })
