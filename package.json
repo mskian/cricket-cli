@@ -1,6 +1,6 @@
 {
   "name": "cricket-cli",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "Get Live Cricket Score Update on Terminal and CMD.",
   "main": "index.js",
   "scripts": {
